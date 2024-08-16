@@ -1,0 +1,11 @@
+type StudentEntity {
+    id: ID!
+    firstName: String
+    lastName: String
+    email: String
+}
+
+type Query {
+    findAllByOrderByIdDesc: [StudentEntity]
+    findOneById(id: ID!): StudentEntity
+}
